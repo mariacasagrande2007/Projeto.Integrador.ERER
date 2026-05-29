@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #E0C8B0;   
+}
+
+.container {
+    padding: 40px;
+}
+
+.frase {
+    height: 50px;
+    font-size: 25px;
+}
+img {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/*Figuras importantes*/
+
+.um .dois {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  gap: 10px;
+}
