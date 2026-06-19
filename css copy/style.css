@@ -211,6 +211,7 @@ h1{
     flex-wrap: wrap;
     justify-content: space-between;
     color: #000;
+    border-radius: 10px;
 }
 
 /* LIVROS */
@@ -225,7 +226,7 @@ h1{
 .livro h2 h3{
     font-size: 28px;
     font-family: Impact, Arial Black, sans-serif;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     line-height: 1.1;
 }
 
