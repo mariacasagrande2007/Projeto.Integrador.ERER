@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #C9723C;
+    font-family: "Oswald", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-image: url('../img/indigenas.jpg');
+    flex-direction: column;
+}
+
+.topo {
+    padding: 16px 32px;
+    
+}
+
+.topo-logo{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.topo-logo img{
+    width: 120px;
+}
+
+.card {
+    background-color: rgb(209, 158, 112);
+    max-width: 700px;
+    width: 100%;
+    padding: 2rem 1.8rem;
+    border-radius: 32px;
+    align-items: center;
+    margin-top: 150px;
+}
+
+.voltar2 {
+    background-color: #C9723C;
+    color: white;
+    padding: 8px 20px;
+    font-size: 1rem;
+    border-radius: 40px;
+    text-decoration: none;
+    display: flex;
+    font-family: "Oswald", sans-serif;
+    margin: 20px;
+    justify-content: flex-end;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+.voltar2:hover {
+    background-color: #a85e2f;
+}
+
+h1 {
+    font-size: 1.9rem;
+    font-weight: 700;
+    color: #1e1e2f;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.grupo1, 
+.grupo2,
+.grupo3 {
+    padding: 12px 15px; 
+    font-size: 20px;
+    box-sizing: border-box;
+    width: 800px;
+}
+
+.input-nome,
+.input-tel,
+.input-email {
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+    width: 100%;
+    max-width: 700px;
+    height: 50px;
+}
+
+
+p {
+    font-weight: 600;
+    color: black;
+}
+
+button {
+    background-color: #dd7c40;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 14px;
+    font-size: 1.1rem;
+    border-radius: 40px;
+    margin-top: 12px;
+}
+
+footer {
+    text-align: center;
+    font-size: 0.7rem;
+    color: #000;
+    margin-top: 1.8rem;
+}
+
+.botao {
+    cursor: pointer;
+}
+
+
+/*RESPONSIVIDADE*/
+/* Para celulares (até 480px) */
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    .card {
+        padding: 1.2rem;
+        margin-top: 50px;
+        border-radius: 24px;
+    }
+
+    h1 {
+        font-size: 1.3rem;
+        margin-bottom: 0.3rem;
+    }
+
+    .grupo1 {
+        font-size: 14px;
+        margin-bottom: 12px;
+    }
+
+    .exemplo1,
+    .exemplo2,
+    .exemplo3 {
+        height: 40px;
+        padding: 8px 12px;
+        border-radius: 30px;
+        font-size: 0.85rem;
+    }
+
+    button {
+        padding: 10px;
+        font-size: 0.9rem;
+        margin-top: 10px;
+    }
+
+    footer {
+        font-size: 0.55rem;
+        margin-top: 1rem;
+    }
+}
+
+/* Para telas muito grandes (acima de 1200px) */
+@media (min-width: 1200px) {
+    .card {
+        max-width: 800px;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    .exemplo1,
+    .exemplo2,
+    .exemplo3 {
+        height: 55px;
+        font-size: 1.1rem;
+        padding: 12px 20px;
+    }
+
+    button {
+        padding: 16px;
+        font-size: 1.2rem;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
+}
+
+/* Efeito no botão */
+button:hover {
+    background-color: #b85e2a;
+    cursor: pointer;
+}
+
+/* FOOTER */
+
+/* Fundo do footer */
+.footer {
+    background-color: #C9723C;
+    color: white;
+    padding: 8px 12px;
+    width: 100%;
+    font-size: 0.78rem;
+
+
+}
+
+/* Container que limita a largura */
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Linha que segura as colunas (USA FLEXBOX) */
+.footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+/* Cada coluna do footer */
+.footer-col {
+    flex: 1;
+    min-width: 200px;
+}
+
+/* Título de cada coluna */
+.footer-col h3 {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+/* Parágrafos */
+.footer-col p {
+    color: #bbb;
+    line-height: 1.6;
+}
+
+/* Listas */
+.footer-col ul {
+    list-style: none;
+}
+
+/* Itens da lista */
+.footer-col ul li {
+    margin-bottom: 10px;
+}
+
+/* Links */
+.footer-col ul li a {
+    color: #bbb;
+    text-decoration: none;
+}
+
+/* Efeito quando passa o mouse no link */
+.footer-col ul li a:hover {
+    color: #e9b045;
+}
+
+/* Parte de baixo do footer (copyright) */
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #8d2809;
+    color: #bbb;
+    font-size: 14px;
+}
+
+footer .logo img {
+    width: 100px;
+}
+
+footer .icon {
+    display: flex;
+    gap: 20px;
+}
+
+footer .icon i {
+    font-size: 18px;
+}
+
+footer .icon i:hover {
+    color: darkorange;
+}
+
+/* RESPONSIVIDADE */
+
+/* Quando a tela for menor que 768px (tablet e celular) */
+@media (max-width: 768px) {
+
+    /* Muda as colunas de lado a lado para empilhadas */
+    .footer-row {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* Espaço entre as colunas */
+    .footer-col {
+        margin-bottom: 20px;
+    }
+}

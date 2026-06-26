@@ -221,6 +221,7 @@ h1{
     margin-bottom: 60px;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .livro h2 h3{

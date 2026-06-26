@@ -39,6 +39,14 @@
     box-sizing: border-box;
 }
 
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: var(--color-primary-dark);
@@ -46,7 +54,7 @@ body {
 
 .topo {
     padding: 16px 32px;
-  background: linear-gradient(to right,#e2ad8c, #C9723C);
+    background: linear-gradient(to right,#e2ad8c, #C9723C);
 }
 
 .topo-logo{
@@ -88,13 +96,24 @@ body {
 #topo-icone {
     position: absolute;
     left: -1300px;
-    top: 10px;
-     font-size: 30px;
+    top: 0px;
+     font-size: 50px;
 }
 
 .topo-icone:hover {
     color: var(--color-hover);
     transform: translateY(2px);
+}
+
+.botao2 {
+  background-color: #c9723c;
+  color: white;
+  border: none;
+  width: 100%;
+  padding: 14px;
+  font-size: 1.1rem;
+  border-radius: 40px;
+  margin-top: 12px;
 }
 
 
@@ -109,44 +128,13 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 
 .banner-titulo-destaque {
     color: #E0C8B0;
 }
 
-.banner-social{
-      justify-content: flex-end;
-    gap: var(--space-sm);
-    position: absolute;
-    bottom: 50px;
-    right: 80px;
-    font-size: 30px;
-    cursor:pointer;
-    transition: var(--transition-fast);
-    
-}
-
-.banner-social-lista {
-   list-style: none;
-    display: flex;
-    align-items: center;
-    padding: 0;
-    margin: 0;
-    gap: var(--space-xl);
-}
-
-.banner-icone {
-    color: #C9723C;
-    border: 2px solid #C9723C;
-    border-radius: 50%;
-    padding: 5px;
-}
-
-.banner-icone:hover {
-    color: var(--color-hover);
-    transform: translateY(2px);
-}
 
 /* FOOTER */
 
@@ -162,6 +150,7 @@ body {
 .footer-container {
     max-width: 1200px;
     margin: 0 auto;
+    text-align: center;
 }
 
 /* Linha que segura as colunas (USA FLEXBOX) */
@@ -221,7 +210,22 @@ body {
     font-size: 14px;
 }
 
+footer .logo img {
+    width: 100px;
+}
 
+footer .icon {
+    display: flex;
+    gap: 20px;
+}
+
+footer .icon i {
+    font-size: 18px;
+}
+
+footer .icon i:hover {
+    color:darkorange;
+}
 
 /* RESPONSIVIDADE */
 

@@ -1,0 +1,122 @@
+.topo {
+    padding: 16px 32px;
+  background: linear-gradient(to right,#e2ad8c, #C9723C);
+}
+
+.topo-logo{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.topo-logo img{
+    width: 100px;
+}
+
+/* FOOTER */
+
+/* Fundo do footer */
+.footer {
+    background-color: #C9723C;
+    color: white;
+    padding: 40px 20px 20px 20px;
+    margin-top: auto;
+}
+
+/* Container que limita a largura */
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Linha que segura as colunas (USA FLEXBOX) */
+.footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+/* Cada coluna do footer */
+.footer-col {
+    flex: 1;
+    min-width: 200px;
+}
+
+/* Título de cada coluna */
+.footer-col h3 {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+/* Parágrafos */
+.footer-col p {
+    color: #bbb;
+    line-height: 1.6;
+}
+
+/* Listas */
+.footer-col ul {
+    list-style: none;
+}
+
+/* Itens da lista */
+.footer-col ul li {
+    margin-bottom: 10px;
+}
+
+/* Links */
+.footer-col ul li a {
+    color: #bbb;
+    text-decoration: none;
+}
+
+/* Efeito quando passa o mouse no link */
+.footer-col ul li a:hover {
+    color: #e9b045;
+}
+
+/* Parte de baixo do footer (copyright) */
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #8d2809;
+    color: #bbb;
+    font-size: 14px;
+}
+
+footer .logo img {
+    width: 100px;
+}
+
+footer .icon {
+    display: flex;
+    gap: 20px;
+}
+
+footer .icon i {
+    font-size: 18px;
+}
+
+footer .icon i:hover {
+    color:darkorange;
+}
+
+/* RESPONSIVIDADE */
+
+/* Quando a tela for menor que 768px (tablet e celular) */
+@media (max-width: 768px) {
+    
+    /* Muda as colunas de lado a lado para empilhadas */
+    .footer-row {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    /* Espaço entre as colunas */
+    .footer-col {
+        margin-bottom: 20px;
+    }
+}
